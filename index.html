@@ -13251,7 +13251,7 @@ Requirement already satisfied: MarkupSafe&gt;=0.23 in /opt/conda/lib/python3.7/s
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../listings_raw.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;listings_raw.csv&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14322,7 +14322,7 @@ Low price locations: blue info-sign
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Our dataset has a total of 50599 rows and 106 columns, so we needed to figure out which columns are relevant to our goal of predicing a listing's price. 
+<p>Our dataset has a total of 50599 rows and 106 columns, so we needed to figure out which columns are relevant to our goal of predicting a listing's price. 
 We dropped a total of 64 columns for the reasons below:</p>
 <ul>
 <li><strong>id, scrape_id, host_id</strong>: They aren't relevant to a listing's price, and each row in the dataframe already has a unique index</li>
@@ -14417,7 +14417,7 @@ We dropped a total of 64 columns for the reasons below:</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We now need to do the following steps:</p>
 <ol>
-<li>Strip \$ and \% characters from strings in <strong>host_response_rate</strong>, <strong>price</strong>, <strong>security_deposit</strong>, <strong>cleaning_fee</strong>, and <strong>extra_people</strong></li>
+<li>Strip \$ and % characters from strings in <strong>host_response_rate</strong>, <strong>price</strong>, <strong>security_deposit</strong>, <strong>cleaning_fee</strong>, and <strong>extra_people</strong></li>
 <li>Convert all boolean true/false values into 1/0 so that we can use them as features in our machine learning models.</li>
 <li>Add a new column <strong>num_amenities</strong> that represents the number of amenities in the listing and gives each one the same weight</li>
 </ol>
@@ -15811,7 +15811,7 @@ we suppose that prices are high due to it being a tourist attraction.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can now find and observe the residual plots based on three features alone: property, room, and bed types</p>
+<p>We can now find and observe the residual plots based on three features alone: property, room, and bed types.</p>
 
 </div>
 </div>
